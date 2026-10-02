@@ -1,45 +1,23 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { usePathname } from 'next/navigation';
-import { Sidebar } from './sidebar';
-import { Header as CRMHeader } from './header';
-import { CommandPalette } from '../command-palette';
-import { QuickAddModal } from '../quick-add-modal';
 import { ToastProvider } from '../ui/toast';
-import { RBACProvider } from '@/contexts/rbac-context';
 import { CurrencyProvider } from '@/contexts/currency-context';
 import { CMSProvider } from '@/contexts/cms-context';
 import { Header } from '../website/Header';
 import { Footer } from '../website/Footer';
 import { MobileBottomCTA } from '../website/MobileBottomCTA';
 import { AIChatWidget } from '../website/AIChatWidget';
-
 import { CompareProvider } from '@/lib/compare-context';
 import { CompareDrawer } from '../website/CompareDrawer';
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
-  const [quickAddOpen, setQuickAddOpen] = useState(false);
 
-  // WordPress standalone admin portal
+  // WordPress standalone admin portal for website content management
   const isWPAdminPage = pathname.startsWith('/wp-admin');
 
-  const isAuthPage =
-    pathname === '/login' ||
-    pathname === '/forgot-password' ||
-    pathname === '/reset-password';
-
-  const isDashboardPage =
-    pathname.startsWith('/dashboard') ||
-    pathname === '/agents' ||
-    pathname === '/leads' ||
-    pathname === '/deals' ||
-    pathname === '/site-visits' ||
-    pathname === '/tasks';
-
-  // 0. Render WP-Admin standalone portal
   if (isWPAdminPage) {
     return (
       <ToastProvider>
@@ -50,56 +28,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
     );
   }
 
-  // 1. Render Auth pages
-  if (isAuthPage) {
-    return (
-      <ToastProvider>
-        <div className="min-h-screen w-screen bg-[#000000] text-[#FEFEFE] flex flex-col justify-center">
-          {children}
-        </div>
-      </ToastProvider>
-    );
-  }
-
-  // 2. Render CRM / Dashboard pages with Sidebar & CRM Header
-  if (isDashboardPage) {
-    return (
-      <ToastProvider>
-        <RBACProvider>
-          <CurrencyProvider>
-            <div className="flex h-screen w-screen overflow-hidden bg-slate-50 dark:bg-slate-950 font-sans">
-              {/* Sidebar */}
-              <Sidebar />
-
-              {/* Right Content Area */}
-              <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-                <CRMHeader
-                  onOpenCommandPalette={() => setCommandPaletteOpen(true)}
-                  onOpenQuickAdd={() => setQuickAddOpen(true)}
-                />
-
-                <main className="flex-1 overflow-y-auto p-6 md:p-8">
-                  {children}
-                </main>
-              </div>
-
-              {/* Global CRM Modals */}
-              <CommandPalette
-                isOpen={commandPaletteOpen}
-                onClose={() => setCommandPaletteOpen(false)}
-              />
-              <QuickAddModal
-                isOpen={quickAddOpen}
-                onClose={() => setQuickAddOpen(false)}
-              />
-            </div>
-          </CurrencyProvider>
-        </RBACProvider>
-      </ToastProvider>
-    );
-  }
-
-  // 3. Render Public Website pages with CMS Provider, Currency Provider, Compare Provider, Header, Footer, and Mobile CTA
+  // Standalone Public Website layout
   return (
     <ToastProvider>
       <CMSProvider>
