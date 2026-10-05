@@ -7,7 +7,7 @@ import { ArchitecturalLine } from './ArchitecturalLine';
 import { MapPin, Phone, Mail, MessageSquare, ArrowUpRight } from 'lucide-react';
 
 export const Footer: React.FC = () => {
-  const whatsappUrl = 'https://wa.me/923005123456?text=Hello%20Asad%20Land%20Holdings,%20I%20am%20inquiring%20about%20verified%20properties.';
+  const whatsappUrl = 'https://wa.me/923218004186?text=Hello%20Asad%20Land%20Holdings,%20I%20am%20inquiring%20about%20verified%20properties.';
 
   return (
     <footer className="relative bg-[#000000] text-[#FEFEFE] pt-16 pb-20 border-t border-[#222222] overflow-hidden">
@@ -147,12 +147,12 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-xs text-[#BDBDBD]">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#FEFEFE] shrink-0 mt-0.5" />
-                <span>Main GT Road, Near Kohistan Enclave Gate, Wah Cantt, PK</span>
+                <span>Shop no 3, Hassan Heights, F Block, Wah Cantt, 47040</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#FEFEFE] shrink-0" />
-                <a href="tel:+923005123456" className="hover:text-[#FEFEFE] transition-colors">
-                  +92 300 5123456
+                <a href="tel:+923218004186" className="hover:text-[#FEFEFE] transition-colors">
+                  +92 321 8004186
                 </a>
               </li>
               <li className="flex items-center gap-2">

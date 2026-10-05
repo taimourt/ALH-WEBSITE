@@ -311,7 +311,7 @@ export const ShortsSlider: React.FC<ShortsSliderProps> = ({
                       <Maximize2 className="w-3 h-3" /> Full Video
                     </span>
                     <a
-                      href={`https://wa.me/923005123456?text=${encodeURIComponent(
+                      href={`https://wa.me/923218004186?text=${encodeURIComponent(
                         `Hello Asad Land Holdings, I watched your video short: "${short.title}" (https://youtube.com/shorts/${short.videoId}) and want to enquire about property/construction rates.`
                       )}`}
                       target="_blank"

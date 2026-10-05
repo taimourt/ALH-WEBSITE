@@ -95,7 +95,7 @@ export const ShortsPlayer: React.FC<ShortsPlayerProps> = ({
     }
   };
 
-  const whatsappUrl = `https://wa.me/923005123456?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/923218004186?text=${encodeURIComponent(
     `Hello Asad Land Holdings, I watched your video short: "${currentShort.title}" (https://youtube.com/shorts/${youtubeVideoId}) and want to enquire about property/construction rates.`
   )}`;
 

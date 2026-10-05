@@ -49,7 +49,7 @@ export function FloorPlanViewer({ plan, className = '' }: FloorPlanViewerProps) 
   const groundRooms = plan.roomDimensions.filter(r => r.floor === 'GROUND');
   const firstRooms = plan.roomDimensions.filter(r => r.floor === 'FIRST');
 
-  const whatsappInquiryUrl = `https://wa.me/923005123456?text=${encodeURIComponent(
+  const whatsappInquiryUrl = `https://wa.me/923218004186?text=${encodeURIComponent(
     `Hi Asad Land Holdings, I am reviewing the architectural floor plan for ${plan.title} (${plan.plotDimensions} - ${plan.totalCoveredAreaSqFt} SqFt). I would like to request CAD DWG drawings and a custom consultation with Engr. Hammad Khan.`
   )}`;
 

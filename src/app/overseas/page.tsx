@@ -97,7 +97,7 @@ export default function OverseasDeskPage() {
     });
   };
 
-  const whatsappConsultationUrl = `https://wa.me/923005123456?text=${encodeURIComponent(
+  const whatsappConsultationUrl = `https://wa.me/923218004186?text=${encodeURIComponent(
     `Hello Asad Land Holdings, I am an Overseas Pakistani investor (${clientCountry || 'Overseas'}). I want to schedule a 1-on-1 strategy video consultation with Managing Director Asad Ali.\n\n` +
     `• Topic: ${selectedTopic.replace('_', ' ')}\n` +
     `• My Timezone: ${selectedTimezone}\n` +
@@ -284,7 +284,7 @@ export default function OverseasDeskPage() {
 
             <div className="p-4 bg-[#141414] border border-[#2E2E2E] font-mono text-[11px] text-[#888888]">
               <span className="text-amber-400 font-bold uppercase block mb-1">Direct Hotline:</span>
-              <span>WhatsApp / Call: +92 300 5123456</span>
+              <span>WhatsApp / Call: +92 321 8004186</span>
               <span className="block mt-0.5">Email: asad@asadlandholdings.com</span>
             </div>
           </div>

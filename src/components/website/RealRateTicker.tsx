@@ -234,7 +234,7 @@ export function RealRateTicker({
             {/* Modal Actions */}
             <div className="flex items-center gap-3">
               <a
-                href={`https://wa.me/923005123456?text=${encodeURIComponent(
+                href={`https://wa.me/923218004186?text=${encodeURIComponent(
                   `Hi Asad Land Holdings, I am inquiring about real rate plot inventory similar to Deed #${selectedDeed.id} in ${selectedDeed.societyName} (${selectedDeed.sectorBlock} - ${selectedDeed.plotSize}).`
                 )}`}
                 target="_blank"

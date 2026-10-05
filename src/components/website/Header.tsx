@@ -40,7 +40,7 @@ export const Header: React.FC = () => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  const whatsappUrl = 'https://wa.me/923005123456?text=Hello%20Asad%20Land%20Holdings,%20I%20am%20an%20overseas%20investor%20and%20want%20to%20inquire%20about%20verified%20properties.';
+  const whatsappUrl = 'https://wa.me/923218004186?text=Hello%20Asad%20Land%20Holdings,%20I%20am%20an%20overseas%20investor%20and%20want%20to%20inquire%20about%20verified%20properties.';
 
   return (
     <header
@@ -177,7 +177,7 @@ export const Header: React.FC = () => {
               <MessageSquare className="w-4 h-4 fill-[#000000]" /> WhatsApp Advisory
             </a>
             <a
-              href="tel:+923005123456"
+              href="tel:+923218004186"
               className="flex items-center justify-center gap-2 py-3 border border-[#444444] text-[#FEFEFE] text-xs uppercase tracking-wider"
             >
               <Phone className="w-4 h-4" /> Call Direct Hotline

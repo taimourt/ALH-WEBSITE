@@ -67,7 +67,7 @@ export function PriceAlertSubscription({
     setIsSubmitted(true);
   };
 
-  const whatsappNotificationUrl = `https://wa.me/923005123456?text=${encodeURIComponent(
+  const whatsappNotificationUrl = `https://wa.me/923218004186?text=${encodeURIComponent(
     `Hi Asad Land Holdings, please register my Real-Rate Price Alert:\n- Target: ${plotSize} in ${getSocietyName(society)}\n- Alert Trigger: Below ${formatPKRPrice(targetPricePKR)}\n- Buyer: ${fullName} (${investorType})\n- Horizon: ${horizon}`
   )}`;
 

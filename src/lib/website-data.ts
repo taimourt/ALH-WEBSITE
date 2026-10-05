@@ -451,7 +451,7 @@ export const PROPERTIES_DATA: PropertyItem[] = [
     isHotInvestment: true,
     createdDate: '2026-09-10',
     agentName: 'Asad Ali',
-    agentPhone: '+923005123456',
+    agentPhone: '+923218004186',
   },
   {
     id: 'prop-2',
@@ -537,7 +537,7 @@ export const PROPERTIES_DATA: PropertyItem[] = [
     isHotInvestment: true,
     createdDate: '2026-09-14',
     agentName: 'Asad Ali',
-    agentPhone: '+923005123456',
+    agentPhone: '+923218004186',
   },
   {
     id: 'prop-4',
@@ -577,7 +577,7 @@ export const PROPERTIES_DATA: PropertyItem[] = [
     isHotInvestment: true,
     createdDate: '2026-09-15',
     agentName: 'Asad Ali',
-    agentPhone: '+923005123456',
+    agentPhone: '+923218004186',
   },
   {
     id: 'prop-5',
@@ -737,8 +737,8 @@ export const AGENTS_DATA: AgentItem[] = [
     id: 'agent-1',
     name: 'Asad Ali',
     role: 'Founder & Managing Director',
-    phone: '+92 300 5123456',
-    whatsapp: '923005123456',
+    phone: '+92 321 8004186',
+    whatsapp: '923218004186',
     email: 'asad@asadlandholdings.com',
     specialization: 'Investment Advisory & High-Value Commercial Land',
     experienceYears: 14,
