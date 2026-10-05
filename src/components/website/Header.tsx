@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, MessageSquare, Phone, ChevronRight, Globe } from 'lucide-react';
 import { Button } from './Button';
-import { CurrencySwitcher } from './CurrencySwitcher';
 
 const NAV_ITEMS = [
   { label: 'Properties', href: '/properties' },
@@ -86,10 +85,8 @@ export const Header: React.FC = () => {
           })}
         </nav>
 
-        {/* Action Group: Currency Switcher, WhatsApp, Find Property */}
+        {/* Action Group: WhatsApp, Find Property */}
         <div className="hidden lg:flex items-center gap-3">
-          <CurrencySwitcher />
-
           <a
             href={whatsappUrl}
             target="_blank"
@@ -107,8 +104,6 @@ export const Header: React.FC = () => {
 
         {/* Mobile Action Controls */}
         <div className="flex items-center gap-2 lg:hidden">
-          <CurrencySwitcher />
-
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 border border-[#444444] text-[#FEFEFE] hover:bg-[#222222]"

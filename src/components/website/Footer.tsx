@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FlowLines } from './FlowLines';
 import { ArchitecturalLine } from './ArchitecturalLine';
+import { CurrencySwitcher } from './CurrencySwitcher';
 import { MapPin, Phone, Mail, MessageSquare, ArrowUpRight } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -29,7 +30,7 @@ export const Footer: React.FC = () => {
               Wah Cantt and Islamabad&apos;s authoritative real-estate advisory, sales, and construction engineering firm. Operating strictly on verified market valuations and title deeds.
             </p>
 
-            <div className="flex items-center gap-3 font-mono text-xs">
+            <div className="flex flex-wrap items-center gap-3 font-mono text-xs">
               <a
                 href={whatsappUrl}
                 target="_blank"
@@ -38,6 +39,7 @@ export const Footer: React.FC = () => {
               >
                 <MessageSquare className="w-3.5 h-3.5 fill-[#000000]" /> WhatsApp Advisory
               </a>
+              <CurrencySwitcher variant="footer" direction="up" />
             </div>
           </div>
 
@@ -168,10 +170,13 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Legal & Copyright Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-[#666666] gap-4">
-          <div>
-            © {new Date().getFullYear()} Asad Land Holdings. All rights reserved. Real Estate on Real Rates.
+          <div className="flex items-center gap-3">
+            <span>© {new Date().getFullYear()} Asad Land Holdings. All rights reserved.</span>
+            <span className="hidden md:inline">•</span>
+            <span className="hidden md:inline">Real Estate on Real Rates</span>
           </div>
-          <div className="flex items-center gap-6">
+
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <Link href="/privacy" className="hover:text-[#BDBDBD] transition-colors">
               Privacy Policy
             </Link>
