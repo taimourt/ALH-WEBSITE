@@ -319,21 +319,21 @@ export default function HomePage() {
           <div className="bg-[#111111] border border-[#333333] p-8 text-left font-mono max-w-3xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
               <div>
-                <label className="block text-[10px] text-[#888888] uppercase mb-1">Target Location</label>
+                <label className="block text-[10px] text-[#CCCCCC] uppercase mb-1">Target Location</label>
                 <div className="p-3 bg-[#000000] border border-[#333333] text-xs text-[#FEFEFE]">
                   Wah Cantt / GT Road
                 </div>
               </div>
 
               <div>
-                <label className="block text-[10px] text-[#888888] uppercase mb-1">Investment Goal</label>
+                <label className="block text-[10px] text-[#CCCCCC] uppercase mb-1">Investment Goal</label>
                 <div className="p-3 bg-[#000000] border border-[#333333] text-xs text-[#FEFEFE]">
                   Immediate House Build
                 </div>
               </div>
 
               <div>
-                <label className="block text-[10px] text-[#888888] uppercase mb-1">Budget Horizon</label>
+                <label className="block text-[10px] text-[#CCCCCC] uppercase mb-1">Budget Horizon</label>
                 <div className="p-3 bg-[#000000] border border-[#333333] text-xs text-[#FEFEFE]">
                   PKR 1 Crore – 2 Crore
                 </div>

@@ -245,7 +245,7 @@ export const ConstructionSeriesSection: React.FC<ConstructionSeriesSectionProps>
                   {filteredEpisodes.length}
                 </span>
               </div>
-              <span className="text-[10px] text-[#888888] font-mono">
+              <span className="text-[10px] text-[#CCCCCC] font-mono">
                 7 in view • Scroll ↓
               </span>
             </div>
@@ -304,7 +304,7 @@ export const ConstructionSeriesSection: React.FC<ConstructionSeriesSectionProps>
                       >
                         {ep.title}
                       </h4>
-                      <span className="text-[9px] text-[#777777] font-mono block truncate mt-0.5">
+                      <span className="text-[9px] text-[#CCCCCC] font-mono block truncate mt-0.5">
                         {ep.phase}
                       </span>
                     </div>
@@ -314,7 +314,7 @@ export const ConstructionSeriesSection: React.FC<ConstructionSeriesSectionProps>
             </div>
 
             {/* Playlist Footer Counter & Scroll indicator */}
-            <div className="p-2.5 bg-[#161616] border-t border-[#262626] flex items-center justify-between text-[10px] font-mono text-[#888888]">
+            <div className="p-2.5 bg-[#161616] border-t border-[#262626] flex items-center justify-between text-[10px] font-mono text-[#CCCCCC]">
               <span>Showing 7 of {filteredEpisodes.length} episodes</span>
               <span className="text-amber-400 font-bold">Scroll for more ↓</span>
             </div>

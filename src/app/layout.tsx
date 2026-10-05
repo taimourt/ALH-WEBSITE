@@ -34,7 +34,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="h-full bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased">
+      <body className="h-full bg-[#FEFEFE] text-[#000000] antialiased">
         <MainLayout>{children}</MainLayout>
       </body>
     </html>

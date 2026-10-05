@@ -74,7 +74,7 @@ export const Header: React.FC = () => {
                   className={`py-1 px-1 transition-all duration-200 relative whitespace-nowrap ${
                     isActive
                       ? 'text-[#FEFEFE] font-bold'
-                      : 'text-[#A0A0A0] hover:text-[#FEFEFE]'
+                      : 'text-[#D4D4D4] hover:text-[#FEFEFE]'
                   }`}
                 >
                   <span>{item.label}</span>
@@ -144,7 +144,7 @@ export const Header: React.FC = () => {
             
             {/* Real Estate Navigation */}
             <div>
-              <span className="text-[10px] text-[#666666] uppercase tracking-[0.2em] block mb-2 font-bold">
+              <span className="text-[10px] text-[#CCCCCC] uppercase tracking-[0.2em] block mb-2 font-bold">
                 Properties & Exploration
               </span>
               <div className="divide-y divide-[#1A1A1A]">
@@ -152,29 +152,29 @@ export const Header: React.FC = () => {
                   href="/properties"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><Building className="w-3.5 h-3.5 text-[#888888]" /> Verified Properties</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><Building className="w-3.5 h-3.5 text-[#CCCCCC]" /> Verified Properties</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
                 <Link
                   href="/societies"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><MapPin className="w-3.5 h-3.5 text-[#888888]" /> Housing Societies & Maps</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><MapPin className="w-3.5 h-3.5 text-[#CCCCCC]" /> Housing Societies & Maps</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
                 <Link
                   href="/floor-plans"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
                   <span className="flex items-center gap-2">📐 Architectural Floor Plans</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
               </div>
             </div>
 
             {/* Analysis & Content */}
             <div className="pt-2">
-              <span className="text-[10px] text-[#666666] uppercase tracking-[0.2em] block mb-2 font-bold">
+              <span className="text-[10px] text-[#CCCCCC] uppercase tracking-[0.2em] block mb-2 font-bold">
                 Market Intelligence & Tools
               </span>
               <div className="divide-y divide-[#1A1A1A]">
@@ -189,36 +189,36 @@ export const Header: React.FC = () => {
                   href="/investment"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><Sparkles className="w-3.5 h-3.5 text-[#888888]" /> Real Rates & Valuation</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><Sparkles className="w-3.5 h-3.5 text-[#CCCCCC]" /> Real Rates & Valuation</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
                 <Link
                   href="/calculators"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><Calculator className="w-3.5 h-3.5 text-[#888888]" /> Construction & ROI Calculators</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><Calculator className="w-3.5 h-3.5 text-[#CCCCCC]" /> Construction & ROI Calculators</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
                 <Link
                   href="/videos"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><Video className="w-3.5 h-3.5 text-[#888888]" /> Site Tour Videos</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><Video className="w-3.5 h-3.5 text-[#CCCCCC]" /> Site Tour Videos</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
                 <Link
                   href="/blog"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><BookOpen className="w-3.5 h-3.5 text-[#888888]" /> Market Articles & Guides</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><BookOpen className="w-3.5 h-3.5 text-[#CCCCCC]" /> Market Articles & Guides</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
               </div>
             </div>
 
             {/* Company & Contact */}
             <div className="pt-2">
-              <span className="text-[10px] text-[#666666] uppercase tracking-[0.2em] block mb-2 font-bold">
+              <span className="text-[10px] text-[#CCCCCC] uppercase tracking-[0.2em] block mb-2 font-bold">
                 Company Information
               </span>
               <div className="divide-y divide-[#1A1A1A]">
@@ -226,15 +226,15 @@ export const Header: React.FC = () => {
                   href="/about"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><Info className="w-3.5 h-3.5 text-[#888888]" /> About Asad Land Holdings</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><Info className="w-3.5 h-3.5 text-[#CCCCCC]" /> About Asad Land Holdings</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
                 <Link
                   href="/contact"
                   className="flex items-center justify-between py-2.5 text-[#E0E0E0] hover:text-[#FEFEFE]"
                 >
-                  <span className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-[#888888]" /> Wah Cantt Office & Contact</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />
+                  <span className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-[#CCCCCC]" /> Wah Cantt Office & Contact</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-[#888888]" />
                 </Link>
               </div>
             </div>
