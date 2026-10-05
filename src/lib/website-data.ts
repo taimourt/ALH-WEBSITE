@@ -743,7 +743,7 @@ export const AGENTS_DATA: AgentItem[] = [
     specialization: 'Investment Advisory & High-Value Commercial Land',
     experienceYears: 14,
     bio: 'Founder of Asad Land Holdings with over 14 years of direct transaction experience in Wah Cantt, Taxila, and Islamabad real estate. Committed to transparent pricing and verified title deeds.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80',
+    image: '/images/founder-asad-headshot.jpg',
   },
   {
     id: 'agent-2',
