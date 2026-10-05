@@ -17,25 +17,13 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12">
           {/* Brand & Philosophy Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 border border-[#FEFEFE] flex items-center justify-center p-1">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full text-[#FEFEFE]">
-                  <path d="M3 12L12 4L21 12" />
-                  <path d="M5 20H19" />
-                  <path d="M7 12V20" />
-                  <path d="M12 12V20" />
-                  <path d="M17 12V20" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-bold text-lg uppercase tracking-tight font-sans text-[#FEFEFE]">
-                  ASAD LAND HOLDINGS
-                </h3>
-                <span className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#BDBDBD] block">
-                  REAL ESTATE ON REAL RATES
-                </span>
-              </div>
-            </div>
+            <Link href="/" className="inline-block mb-4 group">
+              <img
+                src="/images/logo-white.png"
+                alt="Asad Land Holdings — Real Estate on Real Rates"
+                className="h-11 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+              />
+            </Link>
 
             <p className="text-xs text-[#BDBDBD] leading-relaxed max-w-sm mb-6 font-sans">
               Wah Cantt and Islamabad&apos;s authoritative real-estate advisory, sales, and construction engineering firm. Operating strictly on verified market valuations and title deeds.

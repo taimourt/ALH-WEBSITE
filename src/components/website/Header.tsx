@@ -53,31 +53,11 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo & Tagline */}
         <Link href="/" className="flex items-center gap-3 group">
-          {/* Architectural Line Logo Mark */}
-          <div className="w-8 h-8 border border-[#FEFEFE] flex items-center justify-center p-1 group-hover:bg-[#FEFEFE] group-hover:text-[#000000] transition-colors">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className="w-full h-full"
-            >
-              <path d="M3 12L12 4L21 12" />
-              <path d="M5 20H19" />
-              <path d="M7 12V20" />
-              <path d="M12 12V20" />
-              <path d="M17 12V20" />
-            </svg>
-          </div>
-
-          <div className="flex flex-col">
-            <span className="font-bold text-base sm:text-lg uppercase tracking-tight font-sans text-[#FEFEFE]">
-              ASAD LAND HOLDINGS
-            </span>
-            <span className="text-[9px] uppercase tracking-[0.25em] font-mono text-[#BDBDBD]">
-              Real Estate on Real Rates
-            </span>
-          </div>
+          <img
+            src="/images/logo-white.png"
+            alt="Asad Land Holdings — Real Estate on Real Rates"
+            className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Navigation Links */}
