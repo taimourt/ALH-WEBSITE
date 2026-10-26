@@ -38,3 +38,4 @@ prisma/dev.db
 git-push.js
 github-upload.js
 .env*
+data/leads*.json

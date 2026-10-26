@@ -110,6 +110,26 @@ export default function SocietyDetailPage() {
         </button>
       </div>
 
+      {society.slug === 'kohistan-enclave-wah' && (
+        <div className="mb-6 p-4 bg-gradient-to-r from-[#0B0F19] to-slate-900 border border-amber-500/40 rounded flex flex-col sm:flex-row items-center justify-between gap-4 text-white">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-full bg-amber-400 text-black flex items-center justify-center font-bold text-sm shrink-0">
+              ⭐
+            </div>
+            <div>
+              <div className="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider">Dedicated Feature Page Available</div>
+              <div className="text-xs text-slate-300 font-sans">Explore our dedicated Kohistan Enclave landing portal with interactive plot calculators, block guides & official payment plans.</div>
+            </div>
+          </div>
+          <Link
+            href="/kohistan-enclave"
+            className="px-4 py-2 bg-amber-400 hover:bg-amber-300 text-black font-mono text-xs uppercase font-bold tracking-wider shrink-0 rounded transition-colors"
+          >
+            Open Kohistan Enclave Portal →
+          </Link>
+        </div>
+      )}
+
       {/* 1. HERO BANNER */}
       <div className="relative aspect-[21/9] w-full bg-[#000000] border border-[#000000] mb-8 overflow-hidden">
         <Image

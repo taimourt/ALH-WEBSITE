@@ -14,6 +14,9 @@ interface SocietyCardProps {
 }
 
 export const SocietyCard: React.FC<SocietyCardProps> = ({ society, className = '' }) => {
+  const isKohistan = society.slug === 'kohistan-enclave-wah';
+  const targetUrl = isKohistan ? '/kohistan-enclave' : `/societies/${society.slug}`;
+
   return (
     <div className={`group bg-[#FEFEFE] border border-[#E5E5E5] transition-all duration-300 hover:border-[#000000] flex flex-col h-full ${className}`}>
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#F4F4F4]">
@@ -24,8 +27,13 @@ export const SocietyCard: React.FC<SocietyCardProps> = ({ society, className = '
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
-        <div className="absolute top-3 left-3">
+        <div className="absolute top-3 left-3 flex items-center gap-2">
           <Badge variant="dark">{society.city}</Badge>
+          {isKohistan && (
+            <span className="px-2 py-0.5 bg-amber-400 text-black text-[9px] font-mono font-black uppercase rounded shadow-md">
+              ⭐ Dedicated Portal
+            </span>
+          )}
         </div>
         <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
           <Badge variant="solid" className="bg-[#FEFEFE]/90 text-[#000000]">
@@ -37,7 +45,7 @@ export const SocietyCard: React.FC<SocietyCardProps> = ({ society, className = '
 
       <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-bold text-[#000000] uppercase tracking-tight mb-2 group-hover:underline">
-          <Link href={`/societies/${society.slug}`}>{society.name}</Link>
+          <Link href={targetUrl}>{society.name}</Link>
         </h3>
 
         <p className="text-xs text-[#666666] line-clamp-2 leading-relaxed mb-4">
@@ -62,10 +70,10 @@ export const SocietyCard: React.FC<SocietyCardProps> = ({ society, className = '
             {society.devStatus}
           </span>
           <Link
-            href={`/societies/${society.slug}`}
+            href={targetUrl}
             className="inline-flex items-center gap-1 text-xs font-mono font-bold uppercase tracking-wider text-[#000000] group-hover:translate-x-1 transition-transform"
           >
-            Explore Society <ArrowUpRight className="w-4 h-4" />
+            {isKohistan ? 'Open Dedicated Portal' : 'Explore Society'} <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

@@ -16,7 +16,7 @@ import { ShortsSlider } from '@/components/website/ShortsSlider';
 import { ConstructionSeriesSection } from '@/components/website/ConstructionSeriesSection';
 import { ConstructionPackageBuilder } from '@/components/website/ConstructionPackageBuilder';
 import { PROPERTIES_DATA, SOCIETIES_DATA, INVESTMENT_REPORTS, VIDEOS_DATA, STANDARD_VIDEOS_DATA, AGENTS_DATA } from '@/lib/website-data';
-
+import { HeroQuickLeadForm } from '@/components/website/HeroQuickLeadForm';
 
 import { RealRateTicker } from '@/components/website/RealRateTicker';
 import { HistoricalRateChart } from '@/components/website/HistoricalRateChart';
@@ -100,53 +100,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Right Visual: High-End Architectural Line Drawing Motif */}
+            {/* Hero Right: Direct Executive Quick Lead Form */}
             <div className="lg:col-span-5 relative">
-              <div className="border border-[#000000] p-8 bg-[#FEFEFE] shadow-2xl relative">
-                <div className="w-full aspect-square border border-[#E5E5E5] p-6 flex flex-col justify-between relative overflow-hidden bg-[#F4F4F4]/50">
-                  
-                  {/* Subtle Background Structural Grid */}
-                  <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]" />
-
-                  {/* Top Architectural Blueprint Header */}
-                  <div className="flex items-center justify-between border-b border-[#000000] pb-3 z-10">
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#000000] font-bold">
-                      ARCHITECTURAL BLUEPRINT
-                    </span>
-                    <span className="text-[10px] font-mono text-[#666666]">
-                      REF: ALH-2026-WAH
-                    </span>
-                  </div>
-
-                  {/* Central Architectural SVG Motif */}
-                  <div className="my-auto py-8 text-[#000000] flex justify-center z-10">
-                    <svg viewBox="0 0 200 160" fill="none" stroke="currentColor" className="w-full max-w-[280px] h-auto">
-                      {/* Roof structure line art */}
-                      <path d="M20 100 L100 20 L180 100" strokeWidth="1.5" strokeLinecap="square" />
-                      <path d="M35 88 L100 35 L165 88" strokeWidth="0.75" strokeDasharray="3 3" />
-                      {/* Base structure lines */}
-                      <path d="M30 140 H170" strokeWidth="1.5" />
-                      <path d="M40 100 V140" strokeWidth="1" />
-                      <path d="M75 100 V140" strokeWidth="1" />
-                      <path d="M125 100 V140" strokeWidth="1" />
-                      <path d="M160 100 V140" strokeWidth="1" />
-                      {/* Wave contour flow lines */}
-                      <path d="M10 150 Q100 120 190 150" strokeWidth="0.5" />
-                      <path d="M10 135 Q100 105 190 135" strokeWidth="0.5" strokeDasharray="2 2" />
-                    </svg>
-                  </div>
-
-                  {/* Bottom Blueprint Footer */}
-                  <div className="border-t border-[#000000] pt-3 flex items-center justify-between font-mono text-[9px] uppercase text-[#000000] z-10">
-                    <span>ASAD LAND HOLDINGS</span>
-                    <span className="font-bold">VERIFIED REAL RATES</span>
-                  </div>
-                </div>
-
-                <div className="absolute -bottom-4 -right-4 bg-[#000000] text-[#FEFEFE] px-4 py-2 text-[10px] font-mono uppercase tracking-widest font-bold border border-[#000000]">
-                  ARCHITECTURAL PRECISION
-                </div>
-              </div>
+              <HeroQuickLeadForm />
             </div>
 
           </div>

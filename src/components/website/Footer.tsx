@@ -67,8 +67,8 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/societies/kohistan-enclave-wah" className="hover:text-[#FEFEFE] transition-colors">
-                  Kohistan Enclave
+                <Link href="/kohistan-enclave" className="hover:text-amber-400 font-bold transition-colors">
+                  ⭐ Kohistan Enclave (Official)
                 </Link>
               </li>
               <li>

@@ -54,6 +54,36 @@ export default function SocietiesPage() {
       </div>
 
       {/* ------------------------------------------------------------------ */}
+      {/* FEATURED SPOTLIGHT: KOHISTAN ENCLAVE DEDICATED PORTAL              */}
+      {/* ------------------------------------------------------------------ */}
+      <div className="mb-12 p-6 sm:p-8 bg-gradient-to-br from-[#0B0F19] to-slate-900 text-white rounded-lg border border-amber-500/50 shadow-xl">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="space-y-2">
+            <div className="inline-flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
+              <span>Wah Cantt Benchmark • Dedicated Portal</span>
+            </div>
+            <h3 className="text-xl sm:text-2xl font-black font-mono tracking-tight uppercase text-white">
+              Kohistan Enclave — Official Master Page & 2026 Rate Sheet
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 font-sans max-w-2xl leading-relaxed">
+              Explore our dedicated, in-depth guide covering Block A Executive Mansions, Block B family plots, Overseas Block, 100% underground utilities, and real transacted rate benchmarks with instant lead booking.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3 shrink-0">
+            <Link
+              href="/kohistan-enclave"
+              className="px-6 py-3.5 bg-amber-400 hover:bg-amber-300 text-black font-mono text-xs uppercase font-black tracking-wider transition-colors inline-flex items-center gap-2 rounded"
+            >
+              <span>Explore Kohistan Enclave Portal</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* ------------------------------------------------------------------ */}
       {/* SOCIETIES DIRECTORY LIST                                           */}
       {/* ------------------------------------------------------------------ */}
       <div className="pt-8 border-t border-[#E5E5E5]">
